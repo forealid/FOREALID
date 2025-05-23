@@ -7,15 +7,23 @@ body {
     line-height: 1.7;
     max-width: 900px;
     margin: auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     border-radius: 12px;
     background-color: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 h1, h2 {
     text-align: center;
     color: #111;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 h1 {
@@ -33,13 +41,13 @@ h2 {
 a {
     color: #0077cc;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.3s ease, transform 0.2s ease;
     font-weight: 500;
 }
 
 a:hover {
     color: #0055aa;
-    text-decoration: underline;
+    transform: translateX(2px);
 }
 
 ul {
@@ -50,6 +58,11 @@ ul {
 ul li {
     padding: 8px 0;
     border-bottom: 1px solid #eee;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f1f1f1;
 }
 
 p {
@@ -58,6 +71,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Responsive */
 @media screen and (max-width: 600px) {
     body {
         padding: 20px 10px;
@@ -73,5 +87,35 @@ p {
 
     p {
         font-size: 1em;
+    }
+}
+
+/* Dark mode auto */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(to right, #1e1e1e, #2b2b2b);
+        color: #ddd;
+        background-color: #1a1a1a;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2 {
+        color: #eee;
+    }
+
+    a {
+        color: #66aaff;
+    }
+
+    a:hover {
+        color: #5599ee;
+    }
+
+    ul li {
+        border-bottom: 1px solid #444;
+    }
+
+    ul li:hover {
+        background-color: #2a2a2a;
     }
 }
