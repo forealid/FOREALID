@@ -1,59 +1,77 @@
 /* style.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
-    padding: 20px;
-    line-height: 1.6;
-    max-width: 800px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    color: #222;
+    padding: 40px 20px;
+    line-height: 1.7;
+    max-width: 900px;
     margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    background-color: #fff;
 }
 
 h1, h2 {
-    color: #222;
     text-align: center;
+    color: #111;
+    font-weight: 600;
 }
 
 h1 {
-    font-size: 1.8em;
-    margin-bottom: 0.2em;
+    font-size: 2.2em;
+    margin-bottom: 0.3em;
 }
 
 h2 {
-    margin-top: 2em;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    margin-top: 2.5em;
     border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 a {
-    color: #0066cc;
+    color: #0077cc;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
 }
 
 a:hover {
+    color: #0055aa;
     text-decoration: underline;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 ul li {
-    padding: 6px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     h2 {
         font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
     }
 }
