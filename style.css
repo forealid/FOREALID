@@ -170,3 +170,19 @@ p {
         color: #66aaff;
     }
 }
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  transition: filter 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(1);
+  }
+        }
