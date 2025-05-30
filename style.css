@@ -186,3 +186,27 @@ p {
     filter: invert(1);
   }
         }
+
+html[dir="rtl"] body {
+    font-family: 'Cairo', 'Poppins', sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] p {
+    text-align: right;
+}
+
+html[dir="rtl"] ul {
+    padding-right: 40px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .some-class-with-left-padding {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .language-switcher {
+    text-align: left;
+}
