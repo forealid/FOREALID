@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://forealid.vercel.app/sitemap.xml
